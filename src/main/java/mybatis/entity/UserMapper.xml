@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+ <!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd"> 
+
+<mapper namespace="test">  
+<!--  名字有改动，不是以前随意的的，要按照接口的全限名（new）-->
+	<!--  id:每条sql语句应该有唯一的id（称之为sqlId）
+			parameterType: 参数类型（要写类的完整的名字）
+			-->
+	<select id="findAll"  resultType="mybatis.entity.User">
+			select * from user_1;
+	</select>
+</mapper>
